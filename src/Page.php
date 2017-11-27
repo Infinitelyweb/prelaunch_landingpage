@@ -11,9 +11,24 @@ class Page
     /**
      * loads default values
      */
-    public function __construct() {
+    public function __construct($page) {
         $this->pageItems = [];
-        $this->loadDefaults();
+        
+        $this->loadContent(ucfirst($page));
+    }
+    
+    /**
+     * generate default values
+     */
+    public function loadContent($classname) 
+    {
+        $namespaceClass = __NAMESPACE__.'\\'.$classname;
+        
+        if(class_exists($namespaceClass)) {
+            foreach($namespaceClass::getContent() as $key => $value) {
+                $this->addPageItems($key, $value);
+            }
+        }
     }
     
     /**
@@ -37,15 +52,5 @@ class Page
     public function getPageItems()
     {
         return $this->pageItems;
-    }
-    
-    /**
-     * generate default values
-     */
-    public function loadDefaults() 
-    {
-        foreach(DefaultVar::getDefaultVars() as $key => $value) {
-            $this->addPageItems($key, $value);
-        }
     }
 }
