@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block showcase %}{% endblock %}
+{% block features %}{% endblock %}
+{% block testimonials %}{% endblock %}
+{% block callToAction %}{% endblock %}
+{% block masterhead %}{% endblock %}
+
+{% block box %}
+    {% embed "section/box.html.twig" %}
+        {% block content %}
+            <h1>{{ subpage.headline }}</h1>
+            <h2>{{ subpage.lead }}</h2>
+            <div>
+                {{ subpage.maincontent }}
+            </div>
+        {% endblock %}
+    {% endembed %}  
+    
+{% endblock %}
