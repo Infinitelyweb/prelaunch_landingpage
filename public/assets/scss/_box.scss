@@ -1,0 +1,14 @@
+.box {
+  background-color:$white;
+  border-top:1px solid $gray-500;
+  border-bottom: 1px solid $gray-500;
+  padding: 20px 0 20px 0;
+  min-height:200px;
+  
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+}
