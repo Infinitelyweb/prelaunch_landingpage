@@ -1,0 +1,29 @@
+<section class="call-to-action text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h2 class="mb-4">{{ cta.title }}</h2>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+              
+            <!-- Begin MailChimp Signup Form -->
+            <form action="{{ mailchimp.url }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+               <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                    <input type="email" placeholder="{{ mailchimp.placeholderEmail }}" name="EMAIL" class="form-c-input" id="mce-EMAIL">
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_831ada0157ff7c0d302877258_db5108971f" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="{{ mailchimp.submitText }}" name="subscribe" id="mc-embedded-subscribe" class="btn btn-block btn-primary" style="margin: 10px 0 10px 0; padding: 10px;"></div>
+               </div> 
+               </div>
+            </form>
+            <!--End mc_embed_signup-->
+            
+          </div>
+        </div>
+      </div>
+    </section>

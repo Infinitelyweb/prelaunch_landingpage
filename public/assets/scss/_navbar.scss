@@ -1,0 +1,25 @@
+// Contents
+//
+// Navbar brand
+// Navbar text
+// Responsive navbar
+// Navbar position
+// Navbar themes
+
+
+
+
+
+// Navbar brand
+//
+// Used for brand, project, or site names.
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: $navbar-brand-padding-y;
+  padding-bottom: $navbar-brand-padding-y;
+  font-size: $navbar-brand-font-size;
+  font-family: 'Pacifico', cursive;
+  line-height: inherit;
+  white-space: nowrap;
+}

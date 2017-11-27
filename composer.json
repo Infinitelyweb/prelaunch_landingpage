@@ -1,0 +1,32 @@
+{
+    "name": "infinitelyweb/prelaunchlandingpage",
+    "type": "project",
+    "description": "Pre Launch Landing page based on Twig",
+    "homepage": "https://github.com/Infinitelyweb",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "Version": "1.0.0",
+    "prefer-stable": true,
+    "keywords": [
+        "pre-lunch landing-page",
+        "landing-page",
+        "twig"
+    ],
+    "authors": [
+        {
+            "name": "Sarah Swoboda",
+            "email": "mail@sarah-swoboda.de",
+            "homepage": "https://sarah-swoboda.de/",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Infinitely\\": "src/"
+        }
+    },
+    "require": {
+        "twig/twig": "~2.0",
+        "twbs/bootstrap": "4.0.0-beta.2"
+    }
+}

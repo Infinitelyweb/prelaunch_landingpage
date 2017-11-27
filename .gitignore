@@ -1,0 +1,9 @@
+/vendor
+/composer.lock
+/nbproject
+/var/
+/public/lib/
+/public/assets/css/landing-page.css.map
+/public/assets/css/landing-page.min.css
+/public/assets/css/landing-page.css
+/.sass-cache/

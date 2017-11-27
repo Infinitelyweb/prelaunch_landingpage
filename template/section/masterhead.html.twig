@@ -1,0 +1,37 @@
+<header class="masthead text-white text-center">
+    <div class="col-12" style="position: absolute; top: 20px;">
+        <a class="navbar-brand" href="#">{{ header.brand }}</a>
+    </div>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+        
+      <div class="col-sm-7">
+        <h1>{{ masterhead.headline }}</h1>
+        <div class="lead">{{ masterhead.lead }}</div>
+      </div>
+      <div class="col-sm-5">
+          {% block colright %}
+        <div class="form-c">
+          <!-- Begin MailChimp Signup Form -->
+            <form action="{{ mailchimp.url }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+               <div class="form-row">
+                <div class="col-12">
+                    <p>Fill in the form below to contact us:</p>
+                    <input type="email" placeholder="{{ mailchimp.placeholderEmail }}" name="EMAIL" class="form-c-input" id="mce-EMAIL">
+                </div>
+                <div class="col-12">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_831ada0157ff7c0d302877258_db5108971f" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="{{ mailchimp.submitText }}" name="subscribe" id="mc-embedded-subscribe" class="btn btn-block btn-primary"></div>
+               </div> 
+               </div>
+            </form>
+            <!--End mc_embed_signup-->
+        </div>
+               {% endblock %}
+      </div>
+    </div>
+  </div>
+</header>

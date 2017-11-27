@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  {% include "block/header.html.twig" %}
+
+  <body>
+
+    <!-- Navigation -->
+    {% block nav %}
+        {% embed "block/nav.html.twig" %}{% endembed %}
+    {% endblock %}
+    
+    <!-- Masthead -->
+    {% block masterhead %}
+        {% embed "section/masterhead.html.twig" %}{% endembed %}
+    {% endblock %}
+
+    <!-- Icons Grid -->
+    {% block features %}
+        {% embed "section/features.html.twig" %}{% endembed %}
+    {% endblock %}
+
+    <!-- Image Showcases -->
+    {% block showcase %}
+        {% embed "section/showcase.html.twig" %}{% endembed %}
+    {% endblock %}
+
+    <!-- Testimonials -->
+    {% block testimonials %}
+        {% embed "section/testimonials.html.twig" %}{% endembed %}
+    {% endblock %}
+
+    <!-- Call to Action -->
+    {% block callToAction %}
+        {% embed "section/callToAction.html.twig" %}{% endembed %}
+    {% endblock %}
+
+    <!-- Footer -->
+    {% include "block/footer.html.twig" %}
+
+  </body>
+
+</html>

@@ -1,0 +1,44 @@
+<footer class="footer bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+        <ul class="list-inline mb-2">
+            
+          {% for nav in footer.nav %}
+            <li class="list-inline-item">
+              <a href="{{ nav.url }}">{{ nav.name }}</a>
+            </li>
+            {% if loop.last != true %}
+            <li class="list-inline-item">&sdot;</li>
+            {% endif %}
+          {% endfor %}
+          
+        </ul>
+        <p class="text-muted small mb-4 mb-lg-0">&copy; {{ footer.copy }}</p>
+      </div>
+      <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mr-3">
+            <a href="{{ footer.facebook }}">
+              <i class="fa fa-facebook fa-2x fa-fw"></i>
+            </a>
+          </li>
+          <li class="list-inline-item mr-3">
+            <a href="{{ footer.twitter }}">
+              <i class="fa fa-twitter fa-2x fa-fw"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="{{ footer.instagram }}">
+              <i class="fa fa-instagram fa-2x fa-fw"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+      
+<!-- Bootstrap core JavaScript -->
+<script src="./lib/jquery/dist/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,20 @@
+<section class="showcase">
+  <div class="container-fluid p-0">
+      
+    {% for showcase in showcases %}
+        {% set order1 = 'order-lg-2' %}
+        {% set order2 = 'order-lg-1' %}
+        {% if loop.index % 2 == 0 %}
+            {% set order1 = '' %}
+            {% set order2 = '' %}
+        {% endif %}
+    <div class="row no-gutters">
+      <div class="col-lg-6 {{ order1 }} text-white showcase-img" style="background-image: url('/assets/img/{{ showcase.img }}');"></div>
+      <div class="col-lg-6 {{ order2 }} my-auto showcase-text">
+        <h2>{{ showcase.title }}</h2>
+        <p class="lead mb-0">{{ showcase.desc }}</p>
+      </div>
+    </div>
+    {% endfor %}
+    
+</section>

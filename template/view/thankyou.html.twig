@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block nav %}{% endblock %}
+{% block showcase %}{% endblock %}
+{% block features %}{% endblock %}
+{% block testimonials %}{% endblock %}
+{% block callToAction %}{% endblock %}
+
+{% block masterhead %}
+    {% embed "section/masterhead.html.twig" %}
+        {% block colright %}
+            <div class="form-c">
+                Follow us on social Networks
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item mr-3">
+                      <a href="{{ footer.facebook }}">
+                        <i class="fa fa-facebook fa-2x fa-fw"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item mr-3">
+                      <a href="{{ footer.twitter }}">
+                        <i class="fa fa-twitter fa-2x fa-fw"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="{{ footer.instagram }}">
+                        <i class="fa fa-instagram fa-2x fa-fw"></i>
+                      </a>
+                    </li>
+                  </ul>
+            </div>
+        {% endblock %}
+    {% endembed %}
+{% endblock %}

@@ -1,0 +1,10 @@
+
+.btn-primary {
+    background-color: $cyan;
+    border-color: darken($cyan, 6);
+    
+    &:focus,
+    &:active {
+      border-color: darken($cyan, 6);
+    }
+}
